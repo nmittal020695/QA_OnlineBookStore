@@ -44,16 +44,14 @@ public class TestScript {
 	  }
 	  @Test (priority=2)
 	  public void prechanges() {
-		  WebElement viewbooks = d.findElement(By.xpath("/html/body/div[9]/a"));
-		  viewbooks.click();
+		  d.get("http://localhost:8585/onlinebookstore/viewbook");
 		  d.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
 		  String expected="View Books on Book Store";
 		  Assert.assertEquals(expected, d.getTitle());
 	  }
 	  @Test (priority=2)
 	  public void postchanges() {
-		  WebElement viewbooks = d.findElement(By.xpath("/html/body/div[9]/a"));
-		  viewbooks.click();
+		  d.get("http://localhost:8585/onlinebookstore/viewbook");
 		  d.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
 		  String expected="Book Store";
 		  Assert.assertEquals(expected, d.getTitle());
