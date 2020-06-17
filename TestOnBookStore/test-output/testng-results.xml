@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16231" started-at="2020-06-15T10:15:59 IST" finished-at="2020-06-15T10:16:15 IST">
+  <suite name="Default suite" duration-ms="5171" started-at="2020-06-17T15:47:25 IST" finished-at="2020-06-17T15:47:30 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16231" started-at="2020-06-15T10:15:59 IST" finished-at="2020-06-15T10:16:15 IST">
+    <test name="Default test" duration-ms="5171" started-at="2020-06-17T15:47:25 IST" finished-at="2020-06-17T15:47:30 IST">
       <class name="testing.TestScript">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testing.TestScript@5c5a1b69]" name="beforeTest" is-config="true" duration-ms="14552" started-at="2020-06-15T10:15:59 IST" finished-at="2020-06-15T10:16:13 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testing.TestScript@5c5a1b69]" name="beforeTest" is-config="true" duration-ms="3892" started-at="2020-06-17T15:47:25 IST" finished-at="2020-06-17T15:47:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="titlecheck()[pri:0, instance:testing.TestScript@5c5a1b69]" name="titlecheck" duration-ms="375" started-at="2020-06-15T10:16:14 IST" finished-at="2020-06-15T10:16:14 IST">
+        <test-method status="PASS" signature="titlecheck()[pri:0, instance:testing.TestScript@5c5a1b69]" name="titlecheck" duration-ms="150" started-at="2020-06-17T15:47:29 IST" finished-at="2020-06-17T15:47:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titlecheck -->
-        <test-method status="PASS" signature="adminLogin()[pri:1, instance:testing.TestScript@5c5a1b69]" name="adminLogin" duration-ms="721" started-at="2020-06-15T10:16:14 IST" finished-at="2020-06-15T10:16:15 IST">
+        <test-method status="PASS" signature="adminLogin()[pri:1, instance:testing.TestScript@5c5a1b69]" name="adminLogin" duration-ms="364" started-at="2020-06-17T15:47:29 IST" finished-at="2020-06-17T15:47:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adminLogin -->
-        <test-method status="FAIL" signature="postchanges()[pri:2, instance:testing.TestScript@5c5a1b69]" name="postchanges" duration-ms="104" started-at="2020-06-15T10:16:15 IST" finished-at="2020-06-15T10:16:15 IST">
+        <test-method status="FAIL" signature="postchanges()[pri:2, instance:testing.TestScript@5c5a1b69]" name="postchanges" duration-ms="99" started-at="2020-06-17T15:47:30 IST" finished-at="2020-06-17T15:47:30 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [View Books on Book Store] but found [Book Store]]]>
+              <![CDATA[expected [Welcome to Online Book Store] but found [Online Book Store]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [View Books on Book Store] but found [Book Store]
+              <![CDATA[java.lang.AssertionError: expected [Welcome to Online Book Store] but found [Online Book Store]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at testing.TestScript.postchanges(TestScript.java:57)
+at testing.TestScript.postchanges(TestScript.java:59)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -66,11 +66,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postchanges -->
-        <test-method status="PASS" signature="prechanges()[pri:2, instance:testing.TestScript@5c5a1b69]" name="prechanges" duration-ms="49" started-at="2020-06-15T10:16:15 IST" finished-at="2020-06-15T10:16:15 IST">
+        <test-method status="PASS" signature="prechanges()[pri:2, instance:testing.TestScript@5c5a1b69]" name="prechanges" duration-ms="66" started-at="2020-06-17T15:47:30 IST" finished-at="2020-06-17T15:47:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prechanges -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testing.TestScript@5c5a1b69]" name="afterTest" is-config="true" duration-ms="365" started-at="2020-06-15T10:16:15 IST" finished-at="2020-06-15T10:16:15 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testing.TestScript@5c5a1b69]" name="afterTest" is-config="true" duration-ms="540" started-at="2020-06-17T15:47:30 IST" finished-at="2020-06-17T15:47:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

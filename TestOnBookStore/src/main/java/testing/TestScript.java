@@ -46,15 +46,17 @@ public class TestScript {
 	  public void prechanges() {
 		  d.get("http://localhost:8585/onlinebookstore/viewbook");
 		  d.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
-		  String expected="View Books on Book Store";
-		  Assert.assertEquals(expected, d.getTitle());
+		  WebElement header = d.findElement(By.xpath("//*[@id=\"topmid\"]/h1"));  
+		  String expected="Welcome to Online Book Store";
+		  Assert.assertEquals(expected, header.getText());
 	  }
 	  @Test (priority=2)
 	  public void postchanges() {
 		  d.get("http://localhost:8585/onlinebookstore/viewbook");
 		  d.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS) ;
-		  String expected="Book Store";
-		  Assert.assertEquals(expected, d.getTitle());
+		  WebElement header1 = d.findElement(By.xpath("//*[@id=\"topmid\"]/h1"));
+		  String expected="Online Book Store";
+		  Assert.assertEquals(expected, header1.getText());
 	  }
 	  
 	  @AfterTest
